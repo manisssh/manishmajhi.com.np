@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About</title>
+    <link
+      rel="icon"
+      href="assets/person-raising-hand.png"
+      type="image/x-icon"
+    />
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            padding: max(2vw, 2vh);
+            border: 0;
+            margin: 0;
+        }
+
+        main {
+            display: flex;
+        }
+        figure {
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            aspect-ratio: 1/1;
+            border-radius: 36%;
+        }
+
+        summary {
+            padding: 0 0 0 max(2.5vw, 2.5vh);
+        }
+        li {
+            list-style-type: none;
+        }
+        ul {
+            padding: 0;
+        }
+        
+        .topic {
+            display: inline;
+            font-size: larger;
+            font-weight: bold;
+        }
+        .info {
+            text-decoration: none;
+            color: #dddddd;
+        }
+
+        article {
+            text-align: center;
+        }
+
+        hr {
+            margin-top: min(4.5vw, 4.5vh);
+            border: 2px dashed #1f1f1f;
+            margin-bottom: min(4.5vw, 4.5vh);
+        }
+
+        @media (orientation: portrait) {
+            img {
+                height: min(25vw, 25vh);
+            }
+        }
+        @media (orientation:landscape) {
+            img {
+                height: max(25vw, 25vh);
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <main>
+      <figure>
+        <a href="assets/profilePicture.html"><img src="assets/IMG-1496.jpg" alt="Profile Picture" /></a>
+      </figure>
+      <summary>
+        <h1>Manish Majhi&ensp;(<em>Nishant</em>)</span></h1>
+        <li>
+          <ul>
+            <p class="topic">Academic Qualifiaction:&nbsp;</p>
+            <span class="info">B.Sc CSIT | Tribhuwan University</span>
+          </ul>
+          <ul>
+            <p class="topic">Certifications:&nbsp;</p>
+            <span class="info">Freshman Hacker</span>
+          </ul>
+          <ul>
+            <p class="topic">Mail:&nbsp;</p>
+            <a class="info" href="mailto:manishmajhi@proton.me"
+              >manishmajhi@proton.me</a
+            >
+          </ul>
+          <ul>
+            <p class="topic">Age:&nbsp;</p>
+            <span id="age"></span>
+            <script>
+              const birthYear = parseInt("2000");
+              var currentYear = new Date().getFullYear();
+
+              var age = currentYear - birthYear;
+
+              document.getElementById("age").innerHTML = age;
+            </script>
+          </ul>
+        </li>
+      </summary>
+    </main>
+    <hr />
+    <article>
+      <p>
+        Love to ride bikes, travel new places, read books, play guitar and
+        tinker the gadgets I have. <br />
+        To me, staying fit & healthy is more important than gaining muscles!
+      </p>
+    </article>
+  </body>
+</html>
