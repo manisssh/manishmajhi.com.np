@@ -7,93 +7,107 @@
       href="assets/person-raising-hand.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="index.css" />
     <style>
+      @media (orientation: portrait) {
         body {
-            background-color: black;
-            color: white;
-            padding: max(2vw, 2vh);
-            border: 0;
-            margin: 0;
-        }
-
-        main {
-            display: flex;
+          margin: 2vw;
         }
         figure {
-            border: 0;
-            margin: 0;
-            padding: 0;
+          text-align: center;
         }
-        img {
-            aspect-ratio: 1/1;
-            border-radius: 36%;
+        #profilePic {
+          width: 81vw;
+          border: 0.75rem solid #1f1f1f;
+          display: inline-block;
         }
-
-        summary {
-            padding: 0 0 0 max(2.5vw, 2.5vh);
+        summary > * {
+          text-align: center;
         }
-        li {
-            list-style-type: none;
+        h1 {
+          font-size: 7vw;
+          margin: 0;
         }
-        ul {
-            padding: 0;
+        h2 {
+          font-size: 2.5vw;
         }
-        
-        .topic {
-            display: inline;
-            font-size: larger;
-            font-weight: bold;
+        h3 {
+          font-size: 1.5vw;
+        }
+        p {
+          font-size: 1.75vw;
         }
         .info {
-            text-decoration: none;
-            color: #dddddd;
+          font-size: 1.25vw;
         }
-
+        .languageIcon {
+          height: 12vw;
+        }
+      }
+      @media (orientation: landscape) {
+        body {
+          margin: 0;
+        }
         article {
-            text-align: center;
+          display: flex;
+          flex-direction: row;
         }
-
-        hr {
-            margin-top: min(4.5vw, 4.5vh);
-            border: 2px dashed #1f1f1f;
-            margin-bottom: min(4.5vw, 4.5vh);
+        #profilePic {
+          width: 25vw;
+          margin: 5vh;
+          border: 0.25rem solid #1f1f1f;
         }
-
-        @media (orientation: portrait) {
-            img {
-                height: min(25vw, 25vh);
-            }
+        h1 {
+          font-size: 3.75vw;
+          margin: 5vh 0;
         }
-        @media (orientation:landscape) {
-            img {
-                height: max(25vw, 25vh);
-            }
+        p {
+          font-size: 1.25vw;
+          line-height: 1.75vw;
         }
+        main {
+          margin: 2.5vh 0 2.5 5vh;
+        }
+        .languageIcon {
+          height: 12vh;
+        }
+      }
     </style>
   </head>
   <body>
-    <main>
+    <article>
       <figure>
-        <a href="assets/profilePicture.html"><img src="assets/IMG-1496.jpg" alt="Profile Picture" /></a>
+        <a href="assets/profilePicture.html"
+          ><img src="assets/IMG-1496.jpg" alt="Profile Picture" id="profilePic"
+        /></a>
       </figure>
       <summary>
-        <h1>Manish Majhi&ensp;(<em>Nishant</em>)</span></h1>
+        <div>
+          <h1>Manish Majhi&ensp;(<em>Nishant</em>)</h1>
+          <p>
+            "Staying fit & healthy is more important; that is why I don't do
+            React!"
+          </p>
+        </div>
         <li>
+          <br />
           <ul>
-            <p class="topic">Academic Qualifiaction:&nbsp;</p>
+            <h3>Academic Qualification:&nbsp;</h3>
             <span class="info">B.Sc CSIT | Tribhuwan University</span>
           </ul>
           <ul>
-            <p class="topic">Skills:&nbsp;</p>
-            Analytical, Communication and Socialization
+            <h3>Skills:&nbsp;</h3>
+            <span class="info"
+              >Analytical, Communication and Socialization</span
+            >
           </ul>
           <ul>
-            <p class="topic">Certifications:&nbsp;</p>
+            <h3>Certifications:&nbsp;</h3>
             <span class="info">Freshman Hacker</span>
           </ul>
           <ul>
-            <p class="topic">Age:&nbsp;</p>
-            <span id="age"></span>
+            <h3>Age:&nbsp;</h3>
+            <span class="info" id="age"></span>
             <script>
               const birthYear = parseInt("2000");
               var currentYear = new Date().getFullYear();
@@ -104,15 +118,27 @@
             </script>
           </ul>
         </li>
+        <br />
       </summary>
-    </main>
-    <hr />
-    <article>
-      <p>
-        Loves to ride bike, travel new places, read books, play guitar and Taekwondo. <br />
-        To me, staying fit & healthy is more important than gaining muscles; <br />
-        That is why I didn't like working in React!
-      </p>
     </article>
+    <main>
+      <hr />
+      <h2>Languages Worked With</h2>
+      <hr />
+      <div id="flexing">
+        <img src="assets/CS.png" alt="C#" class="languageIcon" />
+        <img src="assets/C++.png" alt="CPP" class="languageIcon" />
+        <img src="assets/HTML.png" alt="HTML" class="languageIcon" />
+        <img src="assets/CSS.png" alt="CSS" class="languageIcon" />
+        <img src="assets/JS.png" alt="JS" class="languageIcon" />
+        <img src="assets/PHP.png" alt="PHP" class="languageIcon" />
+        <img src="assets/Prolog.png" alt="Prolog" class="languageIcon" />
+        <img src="assets/Python.png" alt="Python" class="languageIcon" />
+        <img src="assets/MySQL.png" alt="SQL" class="languageIcon" />
+        <img src="assets/Java.png" alt="Java" class="languageIcon" />
+        <img src="assets/C.png" alt="C" class="languageIcon" />
+        <img src="assets/R.png" alt="R" class="languageIcon" />
+      </div>
+    </main>
   </body>
 </html>

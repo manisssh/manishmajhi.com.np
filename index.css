@@ -1,0 +1,45 @@
+body {
+    font-family: system-ui, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+figure {
+    margin: 0;
+}
+#profilePic {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+#flexing {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 2vh;
+    gap: 2vh;
+}
+.languageIcon {
+    flex: 1;
+    object-fit: contain;
+}
+
+li {
+    list-style-type: none;
+}
+ul {
+    padding: 0;
+}
+h3 {
+    display: inline;
+}
+.info {
+    text-decoration: none;
+}
+
+hr {
+    border: 2px dashed #1f1f1f;
+}
+h2 {
+    text-align: center;
+    margin: 0;
+}
