@@ -8,69 +8,13 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="portrait.css" />
+    <link rel="stylesheet" href="landscape.css" />
     <style>
-      @media (orientation: portrait) {
-        body {
-          margin: 2vw;
-        }
-        figure {
-          text-align: center;
-        }
-        #profilePic {
-          width: 81vw;
-          border: 0.75rem solid #1f1f1f;
-          display: inline-block;
-        }
-        summary > * {
-          text-align: center;
-        }
-        h1 {
-          font-size: 7vw;
-          margin: 0;
-        }
-        h2 {
-          font-size: 2.5vw;
-        }
-        h3 {
-          font-size: 1.5vw;
-        }
-        p {
-          font-size: 1.75vw;
-        }
-        .info {
-          font-size: 1.25vw;
-        }
-        .languageIcon {
-          height: 12vw;
-        }
-      }
-      @media (orientation: landscape) {
-        body {
-          margin: 0;
-        }
-        article {
-          display: flex;
-          flex-direction: row;
-        }
-        #profilePic {
-          width: 25vw;
-          margin: 5vh;
-          border: 0.25rem solid #1f1f1f;
-        }
-        h1 {
-          font-size: 3.75vw;
-          margin: 5vh 0;
-        }
-        p {
-          font-size: 1.25vw;
-          line-height: 1.75vw;
-        }
-        main {
-          margin: 2.5vh 0 2.5 5vh;
-        }
-        .languageIcon {
-          height: 12vh;
-        }
+      body {
+        font-family: system-ui, sans-serif;
+        background-color: black;
+        color: white;
       }
     </style>
   </head>
@@ -82,39 +26,35 @@
         /></a>
       </figure>
       <summary>
-        <div>
-          <h1>Manish Majhi&ensp;(<em>Nishant</em>)</h1>
-          <p>
-            "Staying fit & healthy is more important; that is why I don't do
-            React!"
-          </p>
-        </div>
+        <h1>Manish Majhi&ensp;(<em>Nishant</em>)</h1>
+        <p>
+          "Staying fit & healthy is more important; that is why I don't do
+          React!"
+        </p>
+        <br />
         <li>
-          <br />
           <ul>
-            <h3>Academic Qualification:&nbsp;</h3>
-            <span class="info">B.Sc CSIT | Tribhuwan University</span>
+            <h2>Academic Qualification:&nbsp;</h2>
+            <span>B.Sc CSIT | Tribhuwan University</span>
           </ul>
           <ul>
-            <h3>Skills:&nbsp;</h3>
-            <span class="info"
-              >Analytical, Communication and Socialization</span
-            >
+            <h2>Skills:&nbsp;</h2>
+            <span>Analytical, Communication and Socialization</span>
           </ul>
           <ul>
-            <h3>Certifications:&nbsp;</h3>
-            <span class="info">Freshman Hacker</span>
+            <h2>Certifications:&nbsp;</h2>
+            <span>Freshman Hacker</span>
           </ul>
           <ul>
-            <h3>Age:&nbsp;</h3>
-            <span class="info" id="age"></span>
+            <h2>Age:&nbsp;</h2>
+            <span id="age"></span>
             <script>
               const birthYear = parseInt("2000");
               var currentYear = new Date().getFullYear();
 
               var age = currentYear - birthYear;
 
-              document.getElementById("age").innerHTML = age;
+              document.getElementById("age").innerHTML = age + " years";
             </script>
           </ul>
         </li>
@@ -123,9 +63,9 @@
     </article>
     <main>
       <hr />
-      <h2>Languages Worked With</h2>
+      <h3>Languages Worked With</h3>
       <hr />
-      <div id="flexing">
+      <div>
         <img src="assets/CS.png" alt="C#" class="languageIcon" />
         <img src="assets/C++.png" alt="CPP" class="languageIcon" />
         <img src="assets/HTML.png" alt="HTML" class="languageIcon" />
