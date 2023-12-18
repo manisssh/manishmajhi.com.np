@@ -6,7 +6,11 @@
     display: block;
     border: 0.75rem solid #1f1f1f;
   }
-  .languageIcon {  height: 10vw;  }
+  .languageIcon {
+    flex: 1;
+    height: 6vw;
+    object-fit: contain;
+  }
   p, ul > span {  font-size: 1.5vw;  }
   h1, p, ul {  text-align: center;  }
   h2, h3 {  font-size: 1.75vw;  }
