@@ -1,37 +1,22 @@
-figure {
-    margin: 0;
-  }
-  #profilePic {
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-  }
-
-  li {
-    list-style-type: none;
-  }
-  ul {
-    padding: 0;
-  }
-
-  h1, h2, h3 {
-    margin: 0;
-  }
-  h2 {
-    display: inline;
-  }
-  h3 {
-    text-align: center;
-  }
-
-  hr {
-    border: 2px dashed #1f1f1f;
-  }
-
-  main > div {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 2vh;
-    gap: 1vw;
+figure {  margin: 0;  }
+#profilePic {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
 }
-  
+
+li {  list-style-type: none;  }
+ul {  padding: 0;  }
+
+h3 {  text-align: center;  }
+h1, h2, h3 {  margin: 0;  }
+h2 {  display: inline;  }
+
+hr {  border: 2px dashed #1f1f1f;  }
+
+main > div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 2vh;
+  gap: 1vw;
+}

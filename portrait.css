@@ -1,26 +1,14 @@
 @media (orientation: portrait) {
-  body {
-    margin: 2vw;
-  }
+  body {  margin: 2vw;  }
   #profilePic {
     width: 75vw;
     margin: 5vh auto;
     display: block;
     border: 0.75rem solid #1f1f1f;
   }
-  .languageIcon {
-    height: 10vw;
-  }
-  h1, p, ul {
-    text-align: center;
-  }
-  h1 {
-    font-size: 6vw;
-  }
-  h2, h3 {
-    font-size: 1.75vw;
-  }
-  p, ul > span {
-    font-size: 1.5vw;
-  }
+  .languageIcon {  height: 10vw;  }
+  p, ul > span {  font-size: 1.5vw;  }
+  h1, p, ul {  text-align: center;  }
+  h2, h3 {  font-size: 1.75vw;  }
+  h1 {  font-size: 6vw;  }
 }

@@ -1,7 +1,5 @@
 @media (orientation: landscape) {
-    article {
-        margin: 5vh;
-    }
+    article {  margin: 5vh;  }
     #profilePic {
         height: 25vw;
         border: 0.25rem solid #1f1f1f;
@@ -20,16 +18,8 @@
         height: 6vw;
         object-fit: contain;
     }
-    h1 {
-        font-size: 3vw;
-    }
-    h2, h3 {
-        font-size: 1.5vw;
-    }
-    p, ul > span {
-        font-size: 1.25vw;
-    }
-    h3 {
-        font-weight: lighter;
-    }
+    p, ul > span {  font-size: 1.25vw;  }
+    h3 {  font-weight: lighter;  }
+    h2, h3 {  font-size: 1.5vw;  }
+    h1 {  font-size: 3vw;  }
   }
