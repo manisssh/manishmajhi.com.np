@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Hello</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="icon"
       href="assets/person-raising-hand.png"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="portrait.css" />
-    <link rel="stylesheet" href="landscape.css" />
-    <style>
-      body {
-        font-family: system-ui, sans-serif;
-        background-color: black;
-        color: white;
-      }
-    </style>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/format.css" />
+    <title>Hello</title>
   </head>
   <body>
-    <article>
+    <main>
       <figure>
-        <a href="assets/profilePicture.html"
-          ><img src="assets/IMG-1496.jpg" alt="Profile Picture" id="profilePic"
+        <a href="pages/profilePicture.html"
+          ><img src="assets/IMG-1496.jpg" alt="Manish Majhi" id="profilePic"
         /></a>
       </figure>
       <summary>
@@ -50,7 +45,7 @@
             <span id="age"></span>
             <script>
               const birthYear = parseInt("2000");
-              var currentYear = new Date().getFlilYear();
+              var currentYear = new Date().getFullYear();
 
               var age = currentYear - birthYear;
 
@@ -60,8 +55,8 @@
         </ul>
         <br />
       </summary>
-    </article>
-    <main>
+    </main>
+    <article>
       <hr />
       <h3>Languages Worked With</h3>
       <hr />
@@ -79,6 +74,6 @@
         <img src="assets/C.png" alt="C" class="languageIcon" />
         <img src="assets/R.png" alt="R" class="languageIcon" />
       </div>
-    </main>
+    </article>
   </body>
 </html>

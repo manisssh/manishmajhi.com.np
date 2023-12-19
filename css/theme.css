@@ -1,0 +1,18 @@
+html {
+  font-family: system-ui, sans-serif;
+  background-color: black;
+  color: white;
+}
+hr {
+  border: min(0.25vh, 0.25vw) dashed #1f1f1f;
+}
+a {
+  color: #4795e1;
+  text-decoration: none;
+}
+a:hover {
+  color: #9cdcfe;
+}
+a:active {
+  color: #ddd;
+}
