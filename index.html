@@ -45,7 +45,7 @@
             <span id="age"></span>
             <script>
               var year = new Date().getFullYear() - 2000;
-              var month = 0;
+              let month = 0;
               if (new Date().getMonth() + 1 < 5) {
                 //because getMonth() is 1 less than actual month
                 year--;
@@ -55,8 +55,9 @@
                   month--;
                 }
               }
-              const age = `${year} year, ${month} months`;
-              document.getElementById("age").innerHTML = age;
+              document.getElementById(
+                "age"
+              ).innerHTML = `${year} year, ${month} months`;
             </script>
           </li>
         </ol>
