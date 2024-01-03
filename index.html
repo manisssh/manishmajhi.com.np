@@ -44,16 +44,18 @@
             <h2>Age:&nbsp;</h2>
             <span id="age"></span>
             <script>
-              const today = new Date();
-              const month =
-                today.getDate() > 25
-                  ? today.getMonth() + 1 - 5
-                  : today.getMonth() + 1 - 5 + 1;
-              const year =
-                today.getMonth() + 1 > 5 ||
-                (today.getMonth() + 1 == 5 && today.getDate() > 25)
-                  ? today.getFullYear() - 2000
-                  : today.getFullYear() - 2000 - 1;
+              var year = new Date().getFullYear() - 2000;
+              var month = 0;
+              if (new Date().getMonth() + 1 < 5) {
+                //because getMonth() is 1 less than actual month
+                year--;
+                month = new Date().getMonth() + 1 - 5 + 12;
+                //+12 to modularize negative months
+                if (new Date().getDate() < 25) {
+                  month--;
+                }
+              }
+              89;
 
               const age = `${year} year, ${month} months`;
               document.getElementById("age").innerHTML = age;
